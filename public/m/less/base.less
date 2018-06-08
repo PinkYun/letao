@@ -1,0 +1,72 @@
+// 公共的样式提取出来
+@color: #006699;
+body{
+    background-color: #fff;
+}
+
+//1. 头部公共样式
+#header{
+    background-color: @color;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    >h4{
+        color: #fff;
+        text-align: center;
+        line-height: 45px;
+    }
+    .fa-search{
+        text-align: right;
+        position: absolute;
+        right: 13px;
+        top: 12px;
+        color: #fff;
+        font-size: 20px;
+    }
+    .fa-arrow-left{
+        position: absolute;
+        left: 15px;
+        top: 10px;
+        color: #fff;
+    }
+    .search-form{
+        padding: 5px 45px;
+        >input{
+            background-color: #fff;
+            margin-bottom: 0;
+            border-radius: 0;
+            text-align: left;
+        }
+    }
+}
+
+
+// 9.底部区域公共样式
+#footer{
+    height: 45px;
+    background-color: @color;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+        a{
+            float: left;
+            width: 25%;
+            color: #fff;
+            text-align: center;
+            margin-top: 5px;
+            span{
+                font-size: 12px;
+                display: block;
+                margin-top: 3px;
+            }
+            &.active{
+                color: orange;
+            }
+        }
+    
+}

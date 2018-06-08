@@ -1,21 +1,89 @@
-@color: #006699;
+@import './base.less';
 
-// 头部样式
-#header{
-    background-color: @color;
-    height: 45px;
-    position: relative;
-    >h4{
-        color: #fff;
-        text-align: center;
-        line-height: 45px;
-    }
-    >a{
-        text-align: right;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        color: #fff;
-        font-size: 20px;
+// 主体部分
+#main{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+//3. 这是导航部分
+#nav{
+    padding: 10px;
+    padding-bottom: 0px;
+    .nav-top{
+        >div{
+            >a{
+                >img{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
+
+//4. 这是banner部分
+#banner{
+    border-top: 1px solid #ccc;
+    padding: 0px 10px;
+    a{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+//5. 品牌专区
+#brand{
+    padding: 0px 10px;
+    .title{
+        img{
+            width: 100%;
+        }
+    }
+    .brand-img{
+       a{
+           img{
+               width: 100%;
+           }
+       }
+    }
+}
+
+//6,7,8, 运动生活专区
+#live,#women,#man{
+    padding: 0px 10px;
+    .title1{
+        img{
+            width: 100%;
+        }
+    }
+    .product{
+        
+        text-align: center;
+        padding: 0px 5px;
+        margin-bottom: 10px;
+       .box{
+        box-shadow: 0px 0px 5px #999;
+        padding: 5px;
+            img{
+                width: 100%;
+            }
+            .price{
+                font-size: 14px;
+                
+                .new-price{
+                    color: orange;
+                }
+                .old-price{
+                    color: #888;
+                }
+            }
+            .button{
+                background-color:@color;
+                color: #fff;
+            }
+       }
+    }
+}
+
+
